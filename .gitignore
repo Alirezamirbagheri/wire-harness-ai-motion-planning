@@ -1,0 +1,15 @@
+.env
+.env.*
+data/
+models/
+checkpoints/
+outputs/
+recordings/
+*.pth
+*.pt
+*.onnx
+*.engine
+*.ckpt
+*.log
+.idea/
+.vscode/
