@@ -1,15 +1,36 @@
+# Python / environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Secrets / local configuration
 .env
 .env.*
-data/
-models/
-checkpoints/
-outputs/
-recordings/
+*.key
+*.pem
+*credentials*
+*secret*
+
+# Private research assets / generated artifacts
+/data/
+/models/
+/checkpoints/
+/outputs/
+/recordings/
+/logs/
+*.log
 *.pth
 *.pt
 *.onnx
 *.engine
+*.trt
 *.ckpt
-*.log
-.idea/
-.vscode/
+*.h5
+*.hdf5
