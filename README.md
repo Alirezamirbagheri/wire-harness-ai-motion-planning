@@ -2,13 +2,15 @@
 
 Portfolio showcase of an industrial research project for autonomous wire-harness handling using AI perception, geometric reasoning, multi-mover motion planning and PLC-based execution.
 
+> **Implementation status:** this showcase reflects the final **Version 3** implementation of the private research workspace. The private repository's `main` branch has been synchronized to that final version, with only repository-safety housekeeping added afterward.
+>
 > This public showcase intentionally excludes the original research repository, datasets, model checkpoints, machine-specific configuration and internal experiment history.
 
 ## Demo
 
 [![Wire-harness system demo](media/wire_harness_demo_thumbnail.jpg)](media/wire_harness_demo_15s.mp4)
 
-The demo shows the physical multi-mover system together with computer-vision and runtime/planning views.
+The demo shows the physical multi-mover system together with computer-vision, geometry/tracking and runtime/planning views.
 
 ## System pipeline
 
@@ -35,12 +37,17 @@ The demo shows the physical multi-mover system together with computer-vision and
 
 ## Segmentation benchmark
 
-A separate public-release repository compares U-Net, U-Net++, DeepLabV3+, HRNet, SegFormer, PIDNet and YOLO26s-Sem using a common evaluation and runtime protocol.
+The perception benchmark is published separately in [`industrial-thin-object-segmentation-benchmark`](https://github.com/Alirezamirbagheri/industrial-thin-object-segmentation-benchmark). It compares U-Net, U-Net++, DeepLabV3+, HRNet, SegFormer, PIDNet and YOLO26s-Sem using a common evaluation and runtime protocol.
 
-The final test showed:
-- **U-Net:** best Wire Dice ≈ 0.889 and Boundary F1 ≈ 0.847
-- **YOLO26s-Sem:** Wire Dice ≈ 0.886 with ≈ 24.5 ms native inference latency (≈ 40.8 FPS)
+Final-test highlights:
+- **U-Net:** best Wire Dice ≈ **0.889** and Boundary F1 ≈ **0.847**
+- **YOLO26s-Sem:** Wire Dice ≈ **0.886** with ≈ **24.5 ms** native inference latency (≈ **40.8 FPS**)
+
+## Documentation
+
+- [`ARCHITECTURE.md`](ARCHITECTURE.md) — perception, geometry, planning and PLC architecture
+- [`PUBLIC_RELEASE_SCOPE.md`](PUBLIC_RELEASE_SCOPE.md) — what is intentionally excluded from the public portfolio release
 
 ## Public-release scope
 
-This repository is intended as a technical portfolio showcase rather than a copy of the full research workspace. Source code or additional implementation details should only be published after confirming redistribution/publication rights for the underlying research material.
+This repository is a technical portfolio showcase rather than a copy of the full research workspace. Source code or additional implementation details should only be published after confirming redistribution/publication rights for the underlying research material.
