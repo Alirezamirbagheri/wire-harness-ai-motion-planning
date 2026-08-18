@@ -2,7 +2,7 @@
 
 Portfolio showcase of an industrial research project for autonomous wire-harness handling using AI perception, geometric reasoning, multi-mover motion planning and PLC-based execution.
 
-> **Implementation status:** this showcase reflects the final **Version 3** implementation of the private research workspace. The private repository's `main` branch has been synchronized to that final version, with only repository-safety housekeeping added afterward.
+> **Implementation status:** this showcase reflects the final **Version 3** implementation.
 >
 > This public showcase intentionally excludes the original research repository, datasets, model checkpoints, machine-specific configuration and internal experiment history.
 
